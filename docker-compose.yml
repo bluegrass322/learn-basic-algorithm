@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  elixir:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    working_dir: /app
+
