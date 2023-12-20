@@ -1,9 +1,3 @@
-FROM elixir:latest
-
+FROM golang:1.21.5
 WORKDIR /app
-
 COPY . .
-
-RUN mix local.hex --force && \
-    mix local.rebar --force
-
