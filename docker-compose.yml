@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  elixir:
+  go:
     build: .
     volumes:
       - type: bind
         source: .
         target: /app
     working_dir: /app
-
+    tty: true
