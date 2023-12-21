@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  go:
+  rust:
     build: .
     volumes:
       - type: bind
         source: .
-        target: /app
-    working_dir: /app
+        target: /algorithms
+    working_dir: /algorithms
     tty: true

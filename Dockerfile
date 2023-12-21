@@ -1,3 +1,3 @@
-FROM golang:1.21.5
-WORKDIR /app
+FROM rust:1.74.1
+WORKDIR /algorithms
 COPY . .
