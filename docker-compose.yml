@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  rust:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /algorithms
+    working_dir: /algorithms
+    tty: true
